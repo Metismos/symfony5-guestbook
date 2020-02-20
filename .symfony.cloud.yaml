@@ -10,7 +10,7 @@ runtime:
         - iconv
         - ctype
         - pdo_pgsql
-        
+        - redis
 
 build:
     flavor: none
@@ -41,3 +41,4 @@ hooks:
 
 relationships:
     database: "db:postgresql"
+    redis: "rediscache:redis"
